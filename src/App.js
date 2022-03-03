@@ -1,12 +1,22 @@
 import logo from './logo.svg';
-import './styles/styles.scss';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <div className='fondo1'>Este es el ejemplo 1</div>
-      <div className='fondo2'>Este es el ejemplo 2</div>
-      <div className='fondo3'>Este es el ejemplo 3</div>
+    <div className='App'>
+      <form>
+        <input type='email '/>
+      
+        <input type='file' />
+        
+        <input type='number' max={10} />
+        
+        <input type='text' required />
+
+        <input type='password' />
+        
+        <button>Submit</button>
+      </form>
       
     </div>
   );
