@@ -1,8 +1,15 @@
 @import './colors.scss';
+@import './mixins.scss';
 
 
-.fondoNegro{
-    background-color: black;
-    box-shadow: 5px 5px 5px rgba(red,0.25);
-    color: blue;
+.fondo1{
+    @include fondoDiv($miColor1,$miColor2,$miColor3);
+}
+
+.fondo2{
+    @include fondoDiv($miColor3,$miColor4,$miColor2);
+}
+
+.fondo3{
+    @include fondoDiv($miColor3,$miColor3,$miColor1);
 }
